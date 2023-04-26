@@ -54,7 +54,7 @@ function addTask() {
     ])
   );
 
-  // create list item, add innerHTML and append to ul
+  // create list item, +innerHTML
   const li = document.createElement("li");
   li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check">
       <input type="text" value="${task.value}" class="task" onfocus="getCurrentTask(this)" onblur="editTask(this)">
@@ -99,6 +99,7 @@ function getCurrentTask(event) {
 // edit the task and update local storage
 function editTask(event) {
   let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
+
   // check if task is empty
   if (event.value === "") {
     alert("Task is empty!");

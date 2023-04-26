@@ -42,7 +42,6 @@
   width: 20%;
 }
 .app form ul li {
-  padding: 10px;
   background-color: #262e4c;
   border-bottom: 1px solid #3a4674;
 }
@@ -76,3 +75,17 @@
   color: #3c345c;
   text-decoration: line-through;
 }
+
+@media screen and (min-width: 768px) {
+  .app {
+    width: 80%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .task {
+    min-width: 40%;
+  }
+}/*# sourceMappingURL=style.css.map */
