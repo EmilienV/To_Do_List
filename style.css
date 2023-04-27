@@ -40,6 +40,10 @@
   font-weight: 600;
   height: 42px;
   width: 20%;
+  color: #4e6190;
+}
+.app form .input_btn:hover {
+  animation: btnhover 0.5s ease 0s 1 normal forwards;
 }
 .app form ul li {
   background-color: #262e4c;
@@ -65,17 +69,27 @@
 .task {
   font-size: 18px;
   padding: 0 10px;
-  width: 150px;
+  width: 45%;
 }
 .task .task:focus {
   outline: none;
 }
 
 .completed {
-  color: #3c345c;
+  color: brown;
   text-decoration: line-through;
 }
 
+@keyframes btnhover {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1);
+  }
+}
 @media screen and (min-width: 768px) {
   .app {
     width: 80%;
@@ -85,7 +99,7 @@
     flex-direction: column;
     width: 100%;
   }
-  .task {
-    min-width: 40%;
+  ul .task {
+    width: 300px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
