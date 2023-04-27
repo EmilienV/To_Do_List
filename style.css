@@ -6,7 +6,7 @@
   padding-top: 50px;
   background-color: #e1e3ea;
   height: 100vh;
-  font-family: sans-serif;
+  font-family: "Indie Flower", cursive;
 }
 
 .app {
@@ -49,7 +49,7 @@
   background-color: #262e4c;
   border-bottom: 1px solid #3a4674;
 }
-.app form ul li i {
+.app form ul li .trash {
   width: 10%;
   float: right;
 }

@@ -25,7 +25,7 @@ function loadTasks() {
           <input type="text" value="${task.task}" class="task ${
       task.completed ? "completed" : ""
     }" onfocus="getCurrentTask(this)" onblur="editTask(this)">
-          <i class="fa fa-trash" onclick="removeTask(this)"><img src="assets/delete.png" alt=""
+          <i class="trash" onclick="removeTask(this)"><img src="assets/delete.png" alt=""
             /></i>`;
     list.insertBefore(li, list.children[0]);
   });
@@ -58,7 +58,7 @@ function addTask() {
   const li = document.createElement("li");
   li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check">
       <input type="text" value="${task.value}" class="task" onfocus="getCurrentTask(this)" onblur="editTask(this)">
-      <i class="fa fa-trash" onclick="removeTask(this)"><img src="assets/delete.png" alt=""
+      <i class="trash" onclick="removeTask(this)"><img src="assets/delete.png" alt=""
             /></i>`;
   list.insertBefore(li, list.children[0]);
   // clear input
